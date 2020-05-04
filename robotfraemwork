@@ -1,0 +1,17 @@
+*** Settings ***
+Library    SeleniumLibrary    
+
+
+
+*** Test Cases ***
+MyTest
+    Log    Hello World    
+    
+LoginSeleniumTes
+    Open Browser    https://www.google.com/gmail/about/#     chrome
+    #Sleep    5 
+    Set Browser Implicit Wait    5   
+    
+    Click Element    link=Sign in    
+    Sleep    50
+    Close Browser
